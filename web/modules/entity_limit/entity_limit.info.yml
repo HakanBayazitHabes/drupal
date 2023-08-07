@@ -1,0 +1,11 @@
+name: 'Entity Limit'
+type: module
+description: 'Allow administrators to restrict the number of entities that may be created based on different conditions.'
+core_version_requirement: ^9.3 || ^10
+package: 'Entity Limit'
+configure: entity.entity_limit.collection
+
+# Information added by Drupal.org packaging script on 2023-06-18
+version: '3.0.0-beta1'
+project: 'entity_limit'
+datestamp: 1687117409

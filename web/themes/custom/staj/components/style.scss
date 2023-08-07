@@ -1,0 +1,22 @@
+@import "global";
+
+body {
+    background-color:$body-bg !important;
+}
+
+.navbar img {
+    width: 200px;
+    height: auto;
+    
+}
+
+.footer img {
+    width: 30%;
+    height: auto;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}

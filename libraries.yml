@@ -1,0 +1,41 @@
+global-styling:
+  version: 1.0
+  css:
+    theme:
+      components/_global/style.css: {}
+  js:
+    components/_global/script.js: {}
+  dependencies:
+    - core/jquery
+    - etiya/popper-js
+    - etiya/bootstrap-cdn
+
+bootstrap-cdn:
+  version: 5.3.0
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css: { type: external, minified: true }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js: { type: external, minified: true }
+
+popper-js:
+  version: 2.9.2
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js: { type: external, minified: true }
+
+dark-styling:
+  version: 1.0
+  css:
+    theme:
+      components/_global/dark.css: {}
+
+lightgallery-js:
+  version: 2.7.1
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css: { type: external, minified: false }
+      https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css: { type: external, minified: true }
+  js:
+    https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js: { type: external, minified: true }
+    https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js: { type: external, minified: true }
+    https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js: { type: external, minified: true }

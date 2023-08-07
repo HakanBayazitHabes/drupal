@@ -1,0 +1,54 @@
+<div class="layout-container">
+
+ <header class=""> 
+<nav class="navbar navbar-expand-lg  container ">
+  <div class="container-fluid d-flex">
+    <a class="navbar-brand " href="https://emreyavuz.drp-dev.com/">{{page.branding}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5 " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+       <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://emreyavuz.drp-dev.com/" target="_blank">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://emreyavuz.drp-dev.com/eventpage" target="_blank">Event Page</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://emreyavuz.drp-dev.com/calendar" target="_blank">Calendar</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Elements</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Login</button>
+        <button class="btn btn-outline-success" type="submit"><a
+          href="https://emreyavuz.drp-dev.com/user/register%22%3ERegister">Register</a></button>
+           
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+
+  <section class="main container">
+    {{ page.content }}
+  </section>
+
+  <footer class="footer bg-warning py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">{{ page.footer_left }}</div>
+        <div class="col-md-4">{{ page.footer_center }}</div>
+        <div class="col-md-4">{{ page.footer_right }}</div>
+      </div>
+    </div>
+  </footer>
+
+</div> {# /.layout-container #}
